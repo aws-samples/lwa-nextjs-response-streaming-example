@@ -1,17 +1,31 @@
-## My Project
+# Nextjs response streaming example
 
-TODO: Fill this README out!
+This example show how to use Lambda Web Adapter to run a nextjs application with response streaming via a [AWS Lambda](https://aws.amazon.com/lambda) Function URL.
 
-Be sure to:
+### Build and Deploy
 
-* Change the title in this README
-* Edit your repository description on GitHub
+Run the following commands to build and deploy the application to lambda. 
 
-## Security
+```bash
+sam build
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+sam deploy --guided
+```
+When the deployment completes, the Function URL will appear in the output list, which is the entrypoint for accessing
+
+### Verify it works
+
+When you open the Function URL in a browser:
+
+- Primary product information will be loaded first at part of the initial response
+
+- Secondary, more personalized details (that might be slower) like recommended products and customer reviews are progressively streamed in.
+
+
+### Thanks 
+
+Page content and styles are powered by the [Next.js App Router Playground - Streaming with Suspense](https://app-dir.vercel.app/streaming). 
 
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
-
