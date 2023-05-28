@@ -26,6 +26,6 @@ When you open the Function URL in a browser:
 
 Page content and styles are powered by the [Next.js App Router Playground - Streaming with Suspense](https://app-dir.vercel.app/streaming). 
 
-## License
+### License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
