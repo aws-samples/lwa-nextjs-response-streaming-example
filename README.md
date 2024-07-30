@@ -1,6 +1,6 @@
 # Nextjs response streaming example
 
-This example show how to use Lambda Web Adapter to run a nextjs application with response streaming via a [AWS Lambda](https://aws.amazon.com/lambda) Function URL.
+This example show how to use [Lambda Web Adapter](https://github.com/awslabs/aws-lambda-web-adapter) to run a nextjs application with response streaming via a [AWS Lambda](https://aws.amazon.com/lambda) Function URL.
 
 ### Build and Deploy
 
